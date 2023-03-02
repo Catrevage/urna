@@ -1,3 +1,4 @@
+//get elements from page
 let SeuVotoPara = document.querySelector('.d-1-1 span');
 let cargo = document.querySelector(".d-1-2 span");
 let numeros = document.querySelector(".d-1-3");
@@ -7,11 +8,13 @@ let esquerdo = document.querySelector(".d-1--esquerdo");
 let direito = document.querySelector(".d-1--direito");
 let fim = document.querySelector(".fim")
 
+//global variables
 let etapaAtual = 0;
 let numero = '' 
 let votoBranco = true;
 let votos = [];
 
+//begin the vote processes
 function beginEtapa(){
     
     let etapa = etapas[etapaAtual]; 
@@ -37,6 +40,7 @@ function beginEtapa(){
 
 }
 
+//refresh information on screem
 function refreshTela() {
     let etapa = etapas[etapaAtual];
     let candidato = etapa.candidates.filter((item)=>{
@@ -78,7 +82,7 @@ function refreshTela() {
 }
 
 
-
+//click number function
 function clicou(n){
     let elnumero = document.querySelector('.numeros.pisca');
     votoBranco =false;
@@ -98,6 +102,7 @@ function clicou(n){
     }
 }
 
+//white vote
 function branco() {    
     if (fim.style.display != 'block' && votoBranco) {
         numero = 'BRANCO';
@@ -111,6 +116,7 @@ function branco() {
     }
 }
 
+//reset vote
 function corrige() {
     numero = '';
     votoBranco = true;
@@ -119,6 +125,7 @@ function corrige() {
 
 }
 
+//comit vote
 function confirma() {
     let etapa = etapas[etapaAtual];
     if (!votoBranco && (etapa.numeros === numero.length) || (!votoBranco && numero === 'BRANCO')) {
