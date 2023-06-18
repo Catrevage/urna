@@ -6,7 +6,7 @@ let etapas = [
              {
                 numero: '34777',
                 nome: "Gorpo",
-                partido: "PPTS - Partido dos Peidões, Tranqueiras e Sebosos",
+                partido: "PDM - Partido dos Magicos",
                 foto: [{url:'img/gorpo.png', legenda:'Vereador'}]
 
         
@@ -14,13 +14,13 @@ let etapas = [
             {
                 numero:'48188',
                 nome: 'Tila',
-                partido: 'PFG - Partido dos Fela da Gaita',
+                partido: 'PFG - Partido Feminino Grandioso',
                 foto: [{url:'img/tila.jpg', legenda:'Vereadora'}]
             },
             {
                 numero: '27777',
                 nome: 'Homem Fera',
-                partido: 'PFF - Partido dos Feios Feiosos',
+                partido: 'PFF - Partido das Feras Feridas',
                 foto: [{url:'img/fera.jpg', legenda:'Vereador'}]
             }
 
@@ -33,7 +33,7 @@ let etapas = [
             {
                 numero: '44',
                 nome: "He-Man",
-                partido: 'PHMMMM - Partidos do Machos Mas Machos Mesmo',
+                partido: 'PM - Partido Macho',
                 vice:'Mentor',
                 foto: [
                     {url:'img/heman.jpg', legenda:'Prefeito'},
@@ -44,7 +44,7 @@ let etapas = [
             {
                 numero:'77',
                 nome: 'Rei Randor',
-                partido: 'PRL - Partido do Rei Ladrão',
+                partido: 'PRL - Partido do Rei Longânimo',
                 vice: 'Rainha Marlena',
                 foto:[
                     {url:'img/rei.jpg', legenda:'Prefeito'},
